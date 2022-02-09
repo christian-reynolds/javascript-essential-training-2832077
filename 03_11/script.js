@@ -30,6 +30,7 @@ function Backpack(
   };
 }
 
+// eslint-disable-next-line no-unused-vars
 const everydayPack = new Backpack(
   "Everyday Backpack",
   30,
