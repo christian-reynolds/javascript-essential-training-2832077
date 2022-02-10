@@ -56,3 +56,22 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+const navContent = `
+  <li><a href="#">Nav 1</a></li>
+  <li><a href="#">Nav 2</a></li>
+  <li><a href="#">Nav 3</a></li>
+  <li><a href="#">Nav 4</a></li>
+  <li><a href="#">Nav 5</a></li>
+`;
+
+const mainNav = document.createElement("nav");
+mainNav.classList.add("main-navigation");
+
+const newNav = document.createElement("ul");
+newNav.innerHTML = navContent;
+mainNav.append(newNav);
+
+const header = document.querySelector(".siteheader");
+// header.parentNode.insertBefore(mainNav, header.nextSibling);
+header.append(mainNav);
